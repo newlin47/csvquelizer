@@ -11,10 +11,10 @@ const csvFilePath =
 
 const syncAndSeed = async () => {
 	await conn.sync({ force: true });
-	const jsonArray = await csv().fromFile(csvFilePath);
-	jsonArray.forEach(async (student) => {
-		await Student.create({ firstName: student.firstName });
-	});
+	// const jsonArray = await csv().fromFile(csvFilePath);
+	// jsonArray.forEach(async (student) => {
+	// 	await Student.create({ firstName: student.firstName });
+	// });
 	await Promise.all([
 		Student.create({ firstName: 'Ethan' }),
 		Student.create({ firstName: 'Larry' }),
