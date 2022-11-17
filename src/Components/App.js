@@ -1,22 +1,24 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Fileupload from './Fileupload';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 
 const App = () => {
 	return (
-		<div>
-			<div>
-				<h1>HELLO WORLD</h1>
-			</div>
-			<div>
-				<nav>
+		<Fragment>
+			<Grid container direction='column' spacing={3} alignItems='center'>
+				<Grid item>
+					<Typography variant='h2'>HELLO WORLD</Typography>
+				</Grid>
+				<Grid item>
 					<Link to={'/fileupload'}>Upload Files</Link>
-				</nav>
-			</div>
+				</Grid>
+			</Grid>
 			<Routes>
 				<Route path='/fileupload' element={<Fileupload />}></Route>
 			</Routes>
-		</div>
+		</Fragment>
 	);
 };
 
