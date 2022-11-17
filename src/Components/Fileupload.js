@@ -1,4 +1,10 @@
 import React, { useState } from 'react';
+import Typography from '@mui/material/Typography';
+import FormControl from '@mui/material/FormControl';
+import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
+import Input from '@mui/material/Input';
+
 const csv = require('csvtojson');
 
 function Fileupload() {
@@ -25,24 +31,28 @@ function Fileupload() {
 	};
 
 	return (
-		<div style={{ textAlign: 'center' }}>
-			<h1>REACTJS CSV IMPORT EXAMPLE </h1>
-			<form>
-				<input
+		<Grid container spacing={3} direction='column' alignItems='center'>
+			<br />
+			<br />
+			<br />
+			<Typography variant='h2'>Import CSV File</Typography>
+			<FormControl>
+				<Input
 					type={'file'}
 					id={'csvFileInput'}
 					accept={'.csv'}
 					onChange={handleOnChange}
 				/>
-				<button
+				<Button
+					variant='contained'
 					onClick={(e) => {
 						handleOnSubmit(e);
 					}}
 				>
 					IMPORT CSV
-				</button>
-			</form>
-		</div>
+				</Button>
+			</FormControl>
+		</Grid>
 	);
 }
 
