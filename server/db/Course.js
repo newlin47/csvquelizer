@@ -1,12 +1,24 @@
 const conn = require('./conn');
-const { STRING } = conn.Sequelize;
+const { STRING, DECIMAL } = conn.Sequelize;
 
 const Course = conn.define('course', {
-	code: {
+	coursecode: {
 		type: STRING,
 		primaryKey: true,
 	},
+	coursename: {
+		type: STRING,
+	},
+	credits: {
+		type: DECIMAL,
+	},
+	gaf: {
+		type: DECIMAL,
+	},
 	department: {
+		type: STRING,
+	},
+	courselevel: {
 		type: STRING,
 	},
 });
