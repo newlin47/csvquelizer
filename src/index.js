@@ -10,12 +10,12 @@ import CssBaseline from '@mui/material/CssBaseline';
 export const Theme = createTheme({
 	palette: {
 		mode: 'dark',
-		text: {
-			primary: '#4caf50',
+		primary: {
+			main: '#1c6f02',
 		},
-	},
-	typography: {
-		fontFamily: ['"Courier New"', 'monospace'].join(','),
+		secondary: {
+			main: '#f50057',
+		},
 	},
 });
 

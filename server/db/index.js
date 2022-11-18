@@ -10,13 +10,9 @@ const path = require('path');
 // CSV files to sync and seed
 
 const studentlist = path.join(__dirname, './csv/students.csv');
-
 const courselist = path.join(__dirname, './csv/courses.csv');
-
 const teacherlist = path.join(__dirname, './csv/teachers.csv');
-
 const sectionlist = path.join(__dirname, './csv/sections.csv');
-
 const enrollmentlist = path.join(__dirname, './csv/enrollments.csv');
 
 // Use this : await csv().fromFile(csvFilePath)
