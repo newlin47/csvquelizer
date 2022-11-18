@@ -3,34 +3,33 @@ const csv = require('csvtojson');
 const Student = require('./Student');
 const Teacher = require('./Teacher');
 const Course = require('./Course');
-const Enrollment = require('./Enrollment');
 const Section = require('./Section');
 
 // CSV files to sync and seed
 
 const studentlist =
-	'/Users/admin/Desktop/Senior Phase/sandbox/server/db/csv/students.csv';
+	'/Users/ethannewlin/Desktop/Fullstack Senior Phase/sandbox/server/db/csv/students.csv';
 
 const courselist =
-	'/Users/admin/Desktop/Senior Phase/sandbox/server/db/csv/courses.csv';
+	'/Users/ethannewlin/Desktop/Fullstack Senior Phase/sandbox/server/db/csv/courses.csv';
 
 const teacherlist =
-	'/Users/admin/Desktop/Senior Phase/sandbox/server/db/csv/teachers.csv';
+	'/Users/ethannewlin/Desktop/Fullstack Senior Phase/sandbox/server/db/csv/teachers.csv';
 
-const sectionlist = '';
+const sectionlist =
+	'/Users/ethannewlin/Desktop/Fullstack Senior Phase/sandbox/server/db/csv/sections.csv';
 
 // Use this : await csv().fromFile(csvFilePath)
 // to create a json array from a CSV file
 
 // Relationships
 Teacher.hasMany(Section);
-Course.hasMany(Section);
+Course.hasMany(Section, { foreignKey: 'coursecode', sourceKey: 'coursecode' });
 Section.belongsTo(Teacher);
-Section.belongsTo(Course);
-Student.hasMany(Enrollment);
-Section.hasMany(Enrollment);
-Enrollment.belongsTo(Student);
-Enrollment.belongsTo(Section);
+Section.belongsTo(Course, {
+	foreignKey: 'coursecode',
+	targetKey: 'coursecode',
+});
 
 const syncAndSeed = async () => {
 	await conn.sync({ force: true });
@@ -62,10 +61,21 @@ const syncAndSeed = async () => {
 			lastName: teacher.lastName,
 		});
 	});
+
+	const sectionArray = await csv().fromFile(sectionlist);
+	sectionArray.forEach(async (section) => {
+		await Section.create({
+			number: section.number,
+			coursecode: section.coursecode,
+			teacherId: section.teacherId,
+		});
+	});
 };
 
 module.exports = {
 	syncAndSeed,
 	Student,
 	Teacher,
+	Section,
+	Course,
 };

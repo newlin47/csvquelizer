@@ -7,7 +7,7 @@ const Section = conn.define('section', {
 		primaryKey: true,
 		defaultValue: UUIDV4,
 	},
-	name: {
+	number: {
 		type: STRING,
 	},
 });

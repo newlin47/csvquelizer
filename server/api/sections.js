@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express.Router();
-const Student = require('../db/Student');
+const Section = require('../db/Section');
 
 app.get('/', async (req, res, next) => {
 	try {
-		res.send(await Student.findAll());
+		res.send(await Section.findAll());
 	} catch (ex) {
 		next(ex);
 	}

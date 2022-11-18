@@ -1,40 +1,10 @@
 coursecode,coursename,credits,gaf,courselevel,department
-ALS21,Portfolio development 1,1,1,H,Visual Arts
-AMS11,Ceramics,1,1,H,Visual Arts
-ANS11,Studio art,1,1,H,Visual Arts
 ANS81,Studio art 1 t1,1,1,H,Visual Arts
 ANS83,Studio art 2 t1,1,1,H,Visual Arts
 ANS85,Studio art 3 t1,1,1,H,Visual Arts
-ANS87X,Ap studio art - 2d,1,1,H,Visual Arts
-AQS11,Talent gr. 9,1,1,H,Visual Arts
-AQS11QA,Art appreciation,1,1,H,Visual Arts
-AQS11QM,Mural design,1,1,H,Visual Arts
-AQS11QZ,Art zine,1,1,H,Visual Arts
-AQS21,Art of storytelling t1,1,1,H,Visual Arts
-AQS21QM,Mural design t1,1,1,H,Visual Arts
-ATS11,Printmaking,1,1,H,Visual Arts
-ATS21,Intro to screen printing,1,1,H,Visual Arts
-AXEAW,Visual art comp exam,0,0,H,Visual Arts
 AYSM6,Grade 6 art,1,1,6,Visual Arts
 AYSM7,Grade 7 art,1,1,7,Visual Arts
 AYSM8,Grade 8 art,1,1,8,Visual Arts
-BFS21,Financial literacy t1,1,1,H,Business
-CGS21,Intro to theatre t1,1,1,H,Theater
-CQS21,Theater elective t1,1,1,H,Theater
-CQS21QA,Advanced theatre studies t1,1,1,H,Theater
-CQS21QM,Intermediate theatre studies t1,1,1,H,Theater
-CQS81,Intro to theater t1,1,1,H,Theater
-CQS83,Intermediate theater 1 t1,1,1,H,Theater
-CQS85,Intermediate theater ii t1,1,1,H,Theater
-CQS87,Theater production t1,1,1,H,Theater
-CRS21,Theatre production t1,1,1,H,Theater
-CRS21QP,Play production t1,1,1,H,Theater
-CRSM6,Grade 6 theater,1,1,6,Theater
-CRSM7,Grade 7 theater,1,1,7,Theater
-CRSM8,Grade 8 theater,1,1,8,Theater
-CXEAW,Theater comp exam,0,0,H,Theater
-DCS21,Choreography t1,1,1,H,Dance
-DHS21,Dance history t1,1,1,H,Dance
 DQS81,Dance for beginners t1,1,1,H,Dance
 DQS83,Intermediate dance t1,1,1,H,Dance
 DQS85,Intermediate/advanced dance t1,1,1,H,Dance
@@ -42,193 +12,65 @@ DQS87,Advanced dance t1,1,1,H,Dance
 DRSM6,Grade 6 dance,1,1,6,Dance
 DRSM7,Grade 7 dance,1,1,7,Dance
 DRSM8,Grade 8 dance,1,1,8,Dance
-DXEAW,Dance comp exam,0,0,H,Dance
-EAS21,Strategic reading inventory gr. 9,0,1,H,English/ENL
 EENM6,Core ela 6,1,1,6,English/ENL
 EENM7,Core ela 7,1,1,7,English/ENL
 EENM8,Core ela 8,1,1,8,English/ENL
 EES81,English 9 1 of 2,1,1,H,English/ENL
-EES81QNX,English 9 t1 of 2,0,1,H,English/ENL
-EES81QX,English 9 1 of 2,1,1,H,English/ENL
-EES81QXK,English 9 1 of 2,1,1,H,English/ENL
 EES82,English 9 2 of 2,1,1,H,English/ENL
-EES82QNX,English 9 t2 of 2,0,1,H,English/ENL
-EES82QX,English 9 2 of 2,1,1,H,English/ENL
 EES83,English 10 1 of 2,1,1,H,English/ENL
-EES83QNX,English 10 t1 of 2,0,1,H,English/ENL
-EES83QX,English 10 1 of 2,1,1,H,English/ENL
 EES84,English 10 2 of 2,1,1,H,English/ENL
-EES84QNX,English 10 t2 of 2,0,1,H,English/ENL
-EES84QX,English 10 2 of 2,1,1,H,English/ENL
 EES85,English 11 1 of 2,1,1,H,English/ENL
-EES85QX,English 11 1 of 2,1,1,H,English/ENL
-EES85X,Ap english language t1 of 2,1,1,H,English/ENL
 EES86,English 11 2 of 2,1,1,H,English/ENL
-EES86QNX,English 11 2 0f 2,0,1,H,English/ENL
-EES86QX,English 11 2 of 2,1,1,H,English/ENL
 EES87,English 12 1 of 2,1,1,H,English/ENL
-EES87X,Ap english literature & composition t1,1.1,1,H,English/ENL
 EES88,English 12 2 of 2,1,1,H,English/ENL
 EESM6,Core english 6,1,1,6,English/ENL
-EESM6QH,Humanities 6,1,1,6,English/ENL
 EESM7,Core english 7,1,1,7,English/ENL
-EESM7QH,Humanities 7,1,1,7,English/ENL
 EESM8,Core english 8,1,1,8,English/ENL
 EESM8A,English comp acc,1,1,8,English/ENL
-EESM8QH,Humanities 8,1,1,8,English/ENL
-EQS11QB,Ilearn elective,1,1,H,English/ENL
-EQS11QP,Podcast,1,1,H,English/ENL
-EQS21QP,Podcasting t1,1,1,H,English/ENL
-EQS21QSP,Podcasting t1,1,1,H,English/ENL
-EQS81,College & career 9 t1,0.5,1,H,English/ENL
-EQS83,College & career 10 t1,0.5,1,H,English/ENL
-EQS85,College & career 11 t1,0.5,1,H,English/ENL
-EQS87,College & career 12 t1,1,1,H,English/ENL
-EQSM6SJ,Academic intervention ela,1,1,6,English/ENL
-EQSM7SJ,Academic intervention ela,1,1,7,English/ENL
-ERS21,Strategic reading inventory gr. 9,0,1,H,English/ENL
-ERSM6,Strategic reading inventory gr. 6,1,1,6,English/ENL
-ERSM7,Strategic reading inventory gr. 7,1,1,7,English/ENL
-ERSM8,Strategic reading inventory gr. 8,1,1,8,English/ENL
-ESSM6,Literacy support gr. 6,1,1,6,English/ENL
-ESSM7,Literacy support gr. 7,1,1,7,English/ENL
-EWS21,Argumentative writing t1,1,1,H,English/ENL
-EXRCE,Cc ela reg jun,0,1,H,English/ENL
-EXRCR,Cc ela reg jan,0,1,H,English/ENL
-FSS11P,Spanish lote,0,1,H,LOTE
-FSS21P,Spanish lote,0,1,H,LOTE
-FSS21QC,Hispanic culture t1 of 2,1,1,H,LOTE
 FSS61,Spanish i 1 of 2,1,1,H,LOTE
-FSS61QM,Spanish i t1,0.5,1,H,LOTE
 FSS62,Spanish i  2 of 2,1,1,H,LOTE
-FSS62QB,Spanish i  2 of 2,1,1,H,LOTE
-FSS62QX,Spanish i  2 of 2,1,1,H,LOTE
 FSS63,Spanish ii  1 of 2,1,1,H,LOTE
-FSS63QB,Spanish ii  1 of 2,1,1,H,LOTE
-FSS63QX,Spanish ii  1 of 2,1,1,H,LOTE
 FSS64,Spanish ii   2 of 2,1,1,H,LOTE
-FSS64QB,Spanish t4 & t5,2,1,H,LOTE
 FSS65,Spanish iii  1 of 2,1,1,H,LOTE
-FSS65QB,Spanish iii  1 of 2,1,1,H,LOTE
-FSS65QX,Spanish iii  1 of 2,1,1,H,LOTE
 FSS66,Spanish iii   2 of 2,1,1,H,LOTE
-FSS66QB,Spanish iii   2 of 2,1,1,H,LOTE
-FSS66QX,Spanish iii   2 of 2,1,1,H,LOTE
 FSSM6,Spanish gr. 6,1,1,6,LOTE
 FSSM7,Spanish gr. 7,1,1,7,LOTE
-FSSM7A,Spanish i acc,1,1,7,LOTE
 FSSM8,Spanish gr. 8,1,1,8,LOTE
-FSSM8A,Spanish i acc,1,1,8,LOTE
 HES11,Economics,1,1,H,Social Studies
-HGS11P,Global regents prep,0,1,H,Social Studies
-HGS11QE,World history enrichment,0.5,1,H,Social Studies
 HGS41,Global studies 9 1 of 2,1,1,H,Social Studies
-HGS41QX,Global history 9 1 of 2,1,1,H,Social Studies
 HGS42,Global studies 9 2 of 2,1,1,H,Social Studies
-HGS42QB,Global history 9 2 of 2,1,1,H,Social Studies
-HGS42QX,Global history 9 2 of 2,1,1,H,Social Studies
 HGS43,Global studies 10 1 of 2,1,1,H,Social Studies
-HGS43QB,Global history 10 1 of 2,1,1,H,Social Studies
-HGS43QX,Global history 10 1 of 2,1,1,H,Social Studies
 HGS44,Global studies 10 2 of 2,1,1,H,Social Studies
-HGS44QB,Global history 10 2 of 2,1,1,H,Social Studies
-HGS44QX,Global history 10 2 of 2,1,1,H,Social Studies
-HGSM8A,Global history acc,1,1,8,Social Studies
-HSNM6,Core social studies 6,1,1,6,Social Studies
-HSNM7,Core social studies 7,1,1,7,Social Studies
-HSNM8,Core social studies 8,1,1,8,Social Studies
 HSSM6,Core social studies 6,1,1,6,Social Studies
 HSSM7,Core social studies 7,1,1,7,Social Studies
 HSSM8,Core social studies 8,1,1,8,Social Studies
 HUS21,Us history 1 of 2,1,1,H,Social Studies
-HUS21QNX,Us history 1 of 2,0,1,H,Social Studies
-HUS21QX,Us history t1 of 2,1,1,H,Social Studies
-HUS21X,Ap us history t1 of 2,1,1,H,Social Studies
 HUS22,Us history 2 of 2,1,1,H,Social Studies
-HUS22QB,Us history term 2,1,1,H,Social Studies
-HUS22QNX,Us history 2 of 2,0,1,H,Social Studies
-HUS22QX,Us history t2 of 2,1,1,H,Social Studies
-HUSM8A,Us history acc,1,1,8,Social Studies
-HVS11,Part in govt,1,1,H,Social Studies
-HXRCE,Global ii reg jun,0,1,H,Social Studies
-HXRCR,Global ii reg jan,0,1,H,Social Studies
-HXRKE,Framework us hist reg jun,0,1,H,Social Studies
-HXRKR,Framework us hist reg jan,0,1,H,Social Studies
-HXRTR,Global trns reg jan,0,1,H,Social Studies
-HXRUE,Ushist reg june,0,1,H,Social Studies
-HXRUR,Ushist reg jan,0,1,H,Social Studies
-MAS21,Math intervention gr. 9,0,1,H,Mathematics
-MASM6,Math ais gr. 6,1,1,6,Mathematics
-MASM7,Math ais gr. 7,1,1,7,Mathematics
-MASM8,Math ais gr. 8,1,1,8,Mathematics
 MCS21,Pre-calculus t1,1,1,H,Mathematics
-MCS21QC,Calculus t1,1,1,H,Mathematics
-MES11P,Algebra regents prep,0,1,H,Mathematics
 MES21,Integrated algebra 1 of 2,1,1,H,Mathematics
-MES21QE,Algebra 1 enrichment,0.25,1,H,Mathematics
-MES21QX,Algebra 1 t1 of 2,1,1,H,Mathematics
 MES22,Integrated algebra 2 of 2,1,1,H,Mathematics
-MES22QX,Algebra 1 t2,1,1,H,Mathematics
-MESM8A,Int algebra acc,1,1,8,Mathematics
 MGS21,Geometry 1 of 2,1,1,H,Mathematics
-MGS21QNX,Geometry 1 of 2,0,1,H,Mathematics
-MGS21QX,Geometry 1 of 2,1,1,H,Mathematics
 MGS22,Geometry 2 of 2,1,1,H,Mathematics
-MGS22QX,Geometry 2 of 2,1,1,H,Mathematics
 MKS21,Computer science t1 of 2,1,1,H,Mathematics
-MKS21X,Ap computer sci principles t1 of 2,1,1,H,Mathematics
-MMNM6,Core math 6,1,1,6,Mathematics
-MMNM7,Core math 7,1,1,7,Mathematics
-MMNM8,Core math 8,1,1,8,Mathematics
 MMSM6,Core mathematics 6,1,1,6,Mathematics
 MMSM7,Core mathematics 7,1,1,7,Mathematics
 MMSM8,Core mathematics 8,1,1,8,Mathematics
 MQS21,Liberal arts mathematics,1,1,H,Mathematics
-MQS21QF,Math of personal finance t1 of 2,1,1,H,Mathematics
-MQSM6SJ,Academic intervention  math,1,1,6,Mathematics
-MQSM7SJ,Acedemic intervention math 7,1,1,7,Mathematics
-MQSM8SJ,Academic interention math,1,1,8,Mathematics
 MRS21,Algebra 2 / trig 1 of 2,1,1,H,Mathematics
 MRS22,Algebra 2 / trig 2 of 2,1,1,H,Mathematics
-MXRCE,Cc algebra i reg jun,0,1,H,Mathematics
-MXRCR,Cc algebra i reg jan,0,1,H,Mathematics
-MXRKE,Cc geometry reg jun,0,1,H,Mathematics
-MXRKR,Cc geometry reg jan,0,1,H,Mathematics
-MXRNE,Cc algebra ii reg jun,0,1,H,Mathematics
-MXRNR,Cc alg ii reg jan,0,1,H,Mathematics
-PDS21,Advance dance t1,1,1,H,PE and Health
-PDS21QD,Advance dance t1,0.5,1,H,PE and Health
-PFS21,Fitness leadership,0.5,1,H,PE and Health
 PHS11,Health,0.5,1,H,PE and Health
 PHS21,Health,0.5,1,H,PE and Health
-PHSM8QJ,Health 8,1,1,8,PE and Health
-PPS71,Phys ed,0.58,1,H,PE and Health
-PPS72,Phys ed,0.58,1,H,PE and Health
-PPS73,Phys ed,0.58,1,H,PE and Health
-PPS74,Phys ed,0.58,1,H,PE and Health
-PPS75,Phys ed,0.58,1,H,PE and Health
-PPS76,Phys ed,0.58,1,H,PE and Health
-PPS77,Phys ed,0.58,1,H,PE and Health
 PPS81,Phys ed,0.5,1,H,PE and Health
-PPS81QX,Phys ed,0.5,1,H,PE and Health
 PPS82,Phys ed,0.5,1,H,PE and Health
-PPS82QX,Phys ed,0.5,1,H,PE and Health
 PPS83,Phys ed,0.5,1,H,PE and Health
-PPS83QF,Phys ed,0.5,1,H,PE and Health
-PPS83QX,Phys ed,0.5,1,H,PE and Health
 PPS84,Phys ed,0.5,1,H,PE and Health
-PPS84QX,Phys ed,0.5,1,H,PE and Health
 PPS85,Phys ed,0.5,1,H,PE and Health
-PPS85QX,Phys ed,0.5,1,H,PE and Health
 PPS86,Phys ed,0.5,1,H,PE and Health
-PPS86QX,Phys ed,0.5,1,H,PE and Health
 PPS87,Phys ed,0.5,1,H,PE and Health
 PPS88,Phys ed,0.5,1,H,PE and Health
 PPSM6,Physical education 6,1,1,6,PE and Health
 PPSM7,Physical education 7,1,1,7,PE and Health
 PPSM8,Physical education 8,1,1,8,PE and Health
-PTS11,Badminton team,0.5,1,H,PE and Health
-PTS11QB,Psal basketball,0.5,1,H,PE and Health
 SCS21,Chemistry 1 of 2,1,1,H,Science
 SCS21QL,Chemistry lab 1 of 2,0,1,H,Science
 SCS22,Chemistry 2 of 2,1,1,H,Science
@@ -236,30 +78,18 @@ SCS22QL,Chemistry lab 2 of 2,0,1,H,Science
 SES11P,Earth science regents prep,0,1,H,Science
 SES21,Earth science 1 of 2,1,1,H,Science
 SES21QL,Earth science lab 1 of 2,0,1,H,Science
-SES21QLX,Earth science lab 1 of 2,0,1,H,Science
-SES21QX,Earth science 1 of 2,1,1,H,Science
 SES22,Earth science 2 of 2,1,1,H,Science
 SES22QL,Earth science lab 2 of 2,0,1,H,Science
-SES22QLX,Earth science lab 2 of 2,0,1,H,Science
-SES22QX,Earth science 2 of 2,1,1,H,Science
 SFS21,Forensic sci t1 of 2,1,1,H,Science
 SKS21,Intro to computer sci t1 of 2,1,1,H,Science
-SKS21X,Ap computer sci principles t1 of 2,1,1,H,Science
 SKS81,Computer science t1,1,1,H,Science
 SKS83,Computer science t3,1,1,H,Science
 SLS21,Living env 1 of 2,1,1,H,Science
 SLS21QL,Living env 1 lab 1 of 2,0,1,H,Science
-SLS21QLX,Living env lab 1 of 2,0,1,H,Science
-SLS21QX,Living env. 1 of 2,1,1,H,Science
 SLS22,Living env 2 of 2,1,1,H,Science
 SLS22QL,Living env lab 2 of 2,0,1,H,Science
-SLS22QLX,Living env lab 2 of 2,0,1,H,Science
-SLS22QX,Living env. 2 of 2,1,1,H,Science
 SLSM8A,Living env acc,1,1,8,Science
 SLSM8AL,Living env acc lab,1,1,8,Science
-SSNM6,Core science 6,1,1,6,Science
-SSNM7,Core science 7,1,1,7,Science
-SSNM8,Core science 8,1,1,8,Science
 SSSM6,Core science 6,1,1,6,Science
 SSSM7,Core science 7,1,1,7,Science
 SSSM8,Core science 8,1,1,8,Science
@@ -271,64 +101,3 @@ SXRUE,Phset es r jun,0,1,H,Science
 SXRUR,Phset es r jan,0,1,H,Science
 SXRXE,Chemistry r june,0,1,H,Science
 SXRXR,Chemistry r jan,0,1,H,Science
-TQSM6,Design gr. 6,1,1,6,Technology
-TQSM7,Design gr. 7,1,1,7,Technology
-TQSM8,Design gr. 8,1,1,8,Technology
-TYS21,Computer science t1 of 2,1,1,H,Technology
-UDSM6,Grade 6 marching band,1,1,6,Music
-UDSM7,Grade 7 marching band,1,1,7,Music
-UDSM8,Grade 8 marching band,1,1,8,Music
-UNS81,Drumline t1,0.25,1,H,Music
-UNS82,Drumline t2,0.25,1,H,Music
-UNS83,Drumline t3,0.25,1,H,Music
-UNS84,Drumline t4,0.5,1,H,Music
-UNS85,Drumline t5,0.25,1,H,Music
-UNS86,Drumline t6,0.5,1,H,Music
-UNS87,Drumline t7,0.25,1,H,Music
-UNS88,Drumline t8,0.5,1,H,Music
-UQS21,Music appreciation t1,1,1,H,Music
-UQS41QB,Band elective,1,1,H,Music
-UQS41QM,Marching band t1,1,1,H,Music
-UQS42QB,Band elective,1,1,H,Music
-UQS42QM,Marching band t2,1,1,H,Music
-UQS43QB,Band elective,1,1,H,Music
-UQS43QM,Marching band t3,1,1,H,Music
-UQS44QB,Band elective,1,1,H,Music
-UQS44QM,Marching band t4,1,1,H,Music
-UQS81,Vocal music 1 t1,1,1,H,Music
-UQS83,Vocal music 2 t1,1,1,H,Music
-UQS85,Vocal music 3 t1,1,1,H,Music
-UQS87,Vocal music 4 t1,1,1,H,Music
-UQSM8,Marching band gr 8,1,1,8,Music
-UUS41,Vocal musicianship t1,1,1,H,Music
-UUS42,Vocal musicianship t2,1,1,H,Music
-UUS43,Vocal musicianship t3,1,1,H,Music
-UUS44,Vocal musicianship t4,1,1,H,Music
-UUS81,Music theory/musicainship 1 t1,1,1,H,Music
-UUS83,Music theory/musicainship 2 t1,1,1,H,Music
-UUS85,Music theory/musicainship 3 t1,1,1,H,Music
-UUS87,Music theory/musicainship 4 t1,1,1,H,Music
-UVS81,Mixed choir t1 of 8,1,1,H,Music
-UVS82,Mixed choir t2 of 8,1,1,H,Music
-UVS83,Mixed choir t3 of 8,1,1,H,Music
-UVS85,Mixed choir t5 of 8,1,1,H,Music
-UVS87,Mixed choir t7 of 8,1,1,H,Music
-UVSM6,Grade 6 vocal music,1,1,6,Music
-UVSM7,Grade 7 vocal music,1,1,7,Music
-UVSM8,Grade 8 vocal music,1,1,8,Music
-UXEAW,Music comp exam,0,0,H,Music
-ZJARTS,Gr 9 talent,0,1,H,Functional Codes
-ZJMHUM6,Humanities 6,0,1,M,Functional Codes
-ZJMHUM7,Humanities 7,0,1,M,Functional Codes
-ZJMHUM8,Humanities 8,0,1,M,Functional Codes
-ZL6,Lunch gr. 9 - 12,0,1,H,Functional Codes
-ZLM6,Lunch grade 6,0,1,M,Functional Codes
-ZLM7,Lunch grade 7,0,1,M,Functional Codes
-ZLM8,Lunch grade 8,0,1,M,Functional Codes
-ZQ11,Work lab,0,1,H,Functional Codes
-ZQARTS,Talent gr. 9 temp,0,1,H,Functional Codes
-ZQMARTS,Talent gr. 6 & 7 temp,0,1,M,Functional Codes
-ZQMARTS8,Talent gr 8 temp,0,1,M,Functional Codes
-ZXPSATH,Spring psat,0,1,H,Functional Codes
-ZXSATH,Spring sat,0,1,H,Functional Codes
-ZXSHSAT,Shsat exam,0,0,M,Functional Codes
