@@ -6,6 +6,7 @@ import FormControl from '@mui/material/FormControl';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Input from '@mui/material/Input';
+import StudentsGrid from './StudentsGrid';
 
 const csv = require('csvtojson');
 
@@ -58,6 +59,7 @@ function Fileupload() {
 					IMPORT CSV
 				</Button>
 			</FormControl>
+			<StudentsGrid />
 		</Grid>
 	);
 }
