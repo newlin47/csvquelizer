@@ -6,12 +6,14 @@ import FormControl from '@mui/material/FormControl';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Input from '@mui/material/Input';
+import { useSnackbar } from 'notistack';
 import StudentsGrid from './StudentsGrid';
 
 const csv = require('csvtojson');
 
 function Fileupload() {
 	const dispatch = useDispatch();
+	const { enqueueSnackbar } = useSnackbar();
 	const [file, setFile] = useState(null);
 	let csvArray = null;
 	const fileReader = new FileReader();
@@ -32,8 +34,10 @@ function Fileupload() {
 				const csvOutput = event.target.result;
 				if (csvOutput) {
 					csvArray = await csv().fromString(csvOutput);
-					console.log(csvArray);
 					dispatch(addStudents(csvArray));
+					enqueueSnackbar('You uploaded your students!', {
+						variant: 'success',
+					});
 				}
 			};
 		}
@@ -62,8 +66,6 @@ function Fileupload() {
 				</Button>
 			</FormControl>
 			<br />
-			<br />
-			{/* <StudentsGraph /> */}
 			<br />
 			<br />
 			<StudentsGrid />

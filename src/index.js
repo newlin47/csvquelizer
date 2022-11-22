@@ -6,6 +6,7 @@ import store from './store';
 import { HashRouter } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import { SnackbarProvider } from 'notistack';
 
 export const Theme = createTheme({
 	palette: {
@@ -26,7 +27,9 @@ root.render(
 		<HashRouter>
 			<ThemeProvider theme={Theme}>
 				<CssBaseline />
-				<App />
+				<SnackbarProvider maxSnack={3}>
+					<App />
+				</SnackbarProvider>
 			</ThemeProvider>
 		</HashRouter>
 	</Provider>
