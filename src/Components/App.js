@@ -19,51 +19,49 @@ const App = () => {
 
 	return (
 		<Fragment>
-			<Box sx={{ flexGrow: 1 }}>
-				<AppBar position='static'>
-					<Toolbar>
-						<Typography
-							variant='h4'
-							noWrap
-							component='a'
-							href='/'
-							sx={{
-								mr: 2,
-								display: { xs: 'none', md: 'flex' },
-								fontWeight: 700,
-								letterSpacing: '.3rem',
-								color: 'white',
-								textDecoration: 'none',
-							}}
-						>
-							CSV-quelizer
-						</Typography>
-						<Box
-							sx={{
-								display: 'flex',
-								flexDirection: 'row',
-								justifyContent: 'flex-end',
-							}}
-						>
-							{pages.map((page) => (
-								<Button
-									variant='standard'
-									key={page.name}
-									sx={{ margin: '1rem' }}
+			<AppBar position='static'>
+				<Toolbar disableGutters>
+					<Typography
+						variant='h4'
+						noWrap
+						component='a'
+						href='/'
+						sx={{
+							mr: 2,
+							display: { xs: 'none', md: 'flex' },
+							fontWeight: 700,
+							letterSpacing: '.3rem',
+							color: 'white',
+							textDecoration: 'none',
+						}}
+					>
+						CSV-quelizer
+					</Typography>
+					<Box
+						sx={{
+							display: 'flex',
+							flexDirection: 'row',
+							justifyContent: 'flex-end',
+						}}
+					>
+						{pages.map((page) => (
+							<Button
+								variant='standard'
+								key={page.name}
+								sx={{ margin: '1rem' }}
+							>
+								<Link
+									to={page.url}
+									style={{ textDecoration: 'none', color: '#1c6f02' }}
+									underline='hover'
 								>
-									<Link
-										to={page.url}
-										style={{ textDecoration: 'none', color: '#1c6f02' }}
-										underline='hover'
-									>
-										{page.name}
-									</Link>
-								</Button>
-							))}
-						</Box>
-					</Toolbar>
-				</AppBar>
-			</Box>
+									{page.name}
+								</Link>
+							</Button>
+						))}
+					</Box>
+				</Toolbar>
+			</AppBar>
 			<Routes>
 				<Route path='/fileupload' element={<Fileupload />}></Route>
 				<Route path='/studentsgraph' element={<StudentsGraph />}></Route>
