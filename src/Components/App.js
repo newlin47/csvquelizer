@@ -9,7 +9,7 @@ const App = () => {
 		<Fragment>
 			<Grid container direction='column' spacing={3} alignItems='center'>
 				<Grid item>
-					<Typography variant='h2'>HELLO WORLD</Typography>
+					<Typography variant='h2'>CSV-quelizer</Typography>
 				</Grid>
 				<Grid item>
 					<Link to={'/fileupload'}>Upload Files</Link>

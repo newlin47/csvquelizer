@@ -29,6 +29,7 @@ const StudentsGrid = () => {
 				rowsPerPageOptions={[10]}
 				checkboxSelection
 				disableSelectionOnClick
+				getRowId={(row) => row.id}
 			/>
 		</Box>
 	);

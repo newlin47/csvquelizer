@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { fetchStudents, addStudents } from '../store/students';
 import Typography from '@mui/material/Typography';
 import FormControl from '@mui/material/FormControl';
@@ -12,7 +12,6 @@ const csv = require('csvtojson');
 
 function Fileupload() {
 	const dispatch = useDispatch();
-	const { students } = useSelector((state) => state);
 	const [file, setFile] = useState(null);
 	let csvArray = null;
 	const fileReader = new FileReader();
@@ -67,7 +66,7 @@ function Fileupload() {
 			{/* <StudentsGraph /> */}
 			<br />
 			<br />
-			{/* <StudentsGrid /> */}
+			<StudentsGrid />
 		</Grid>
 	);
 }
