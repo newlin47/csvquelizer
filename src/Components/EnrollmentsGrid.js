@@ -11,6 +11,7 @@ const EnrollmentsGrid = () => {
 
 	useEffect(() => {
 		if (enrollments) {
+			setEnrollments(enrollments);
 			setColumns([
 				{ field: 'id', headerName: 'ID', width: 150 },
 				{ field: 'sectionId', headerName: 'Section ID', width: 150 },
