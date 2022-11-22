@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchStudents, addStudents } from '../store/students';
 import StudentsGrid from './StudentsGrid';
@@ -15,6 +15,7 @@ const csv = require('csvtojson');
 function Fileupload() {
 	const dispatch = useDispatch();
 	const { enqueueSnackbar } = useSnackbar();
+	const inputRef = useRef(null);
 	const [file, setFile] = useState(null);
 	let csvArray = null;
 	const fileReader = new FileReader();
@@ -27,6 +28,10 @@ function Fileupload() {
 		setFile(e.target.files[0]);
 	};
 
+	const resetFileInput = () => {
+		inputRef.current.value = null;
+	};
+
 	const handleOnSubmit = (e) => {
 		e.preventDefault();
 		if (file) {
@@ -36,6 +41,7 @@ function Fileupload() {
 				if (csvOutput) {
 					csvArray = await csv().fromString(csvOutput);
 					dispatch(addStudents(csvArray));
+					resetFileInput();
 					enqueueSnackbar('You uploaded your students!', {
 						variant: 'success',
 					});
@@ -62,6 +68,7 @@ function Fileupload() {
 			<br />
 			<FormControl>
 				<Input
+					inputRef={inputRef}
 					type={'file'}
 					id={'csvFileInput'}
 					accept={'.csv'}
