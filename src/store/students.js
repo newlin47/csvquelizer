@@ -5,7 +5,7 @@ const students = (state = [], action) => {
 		return action.students;
 	}
 	if (action.type === 'ADD_STUDENTS') {
-		return [...state, action.students];
+		return [...state, ...action.students];
 	}
 	return state;
 };
