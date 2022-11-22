@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { fetchStudents, addStudents } from '../store/students';
-import StudentsGrid from './StudentsGrid';
+import { fetchEnrollments, addEnrollments } from '../store/enrollments';
+import EnrollmentsGrid from './EnrollmentsGrid';
 import { CSVLink } from 'react-csv';
 import { useSnackbar } from 'notistack';
 import Typography from '@mui/material/Typography';
@@ -12,7 +12,7 @@ import Input from '@mui/material/Input';
 
 const csv = require('csvtojson');
 
-function Fileupload() {
+const EnrollmentUpload = () => {
 	const dispatch = useDispatch();
 	const { enqueueSnackbar } = useSnackbar();
 	const inputRef = useRef(null);
@@ -21,7 +21,7 @@ function Fileupload() {
 	const fileReader = new FileReader();
 
 	useEffect(() => {
-		dispatch(fetchStudents());
+		dispatch(fetchEnrollments());
 	}, []);
 
 	const handleOnChange = (e) => {
@@ -40,9 +40,9 @@ function Fileupload() {
 				const csvOutput = event.target.result;
 				if (csvOutput) {
 					csvArray = await csv().fromString(csvOutput);
-					dispatch(addStudents(csvArray));
+					dispatch(addEnrollments(csvArray));
 					resetFileInput();
-					enqueueSnackbar('You uploaded your students!', {
+					enqueueSnackbar('You uploaded your new enrollments!', {
 						variant: 'success',
 					});
 				}
@@ -51,20 +51,18 @@ function Fileupload() {
 	};
 
 	const headers = [
-		{ label: 'id', key: 'id' },
-		{ label: 'firstName', key: 'firstName' },
-		{ label: 'lastName', key: 'lastName' },
-		{ label: 'gradelevel', key: 'gradelevel' },
+		{ label: 'sectionId', key: 'sectionId' },
+		{ label: 'studentId', key: 'studentId' },
 	];
 
-	const data = [{ id: '', firstName: '', lastName: '', gradelevel: '' }];
+	const data = [{ sectionId: '', studentId: '' }];
 
 	return (
 		<Grid container spacing={3} direction='column' alignItems='center'>
 			<br />
 			<br />
 			<br />
-			<Typography variant='h2'>Import Student CSV File</Typography>
+			<Typography variant='h2'>Import Enrollment CSV File</Typography>
 			<br />
 			<FormControl>
 				<Input
@@ -88,17 +86,17 @@ function Fileupload() {
 				<CSVLink
 					data={data}
 					headers={headers}
-					filename={'studenttemplate.csv'}
+					filename={'enrollmenttemplate.csv'}
 					style={{ textDecoration: 'none', color: 'white' }}
 				>
-					Download CSV Student Template
+					Download CSV Enrollment Template
 				</CSVLink>
 			</Button>
 			<br />
+			<EnrollmentsGrid />
 			<br />
-			<StudentsGrid />
 		</Grid>
 	);
-}
+};
 
-export default Fileupload;
+export default EnrollmentUpload;

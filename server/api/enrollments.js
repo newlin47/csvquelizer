@@ -18,4 +18,14 @@ app.get('/', async (req, res, next) => {
 	}
 });
 
+app.post('/', async (req, res, next) => {
+	try {
+		const enrollmentArray = await req.body;
+		const newEnrollments = await Enrollment.bulkCreate(enrollmentArray);
+		res.status(201).send(newEnrollments);
+	} catch (ex) {
+		next(ex);
+	}
+});
+
 module.exports = app;

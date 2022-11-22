@@ -1,20 +1,19 @@
 import React, { Fragment } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Fileupload from './Fileupload';
+import EnrollmentUpload from './EnrollmentUpload';
 import StudentsGraph from './StudentsGraph';
-import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 
 const App = () => {
 	const pages = [
 		{ name: 'Upload Student File', url: '/fileupload' },
 		{ name: 'View Student Graph', url: '/studentsgraph' },
+		{ name: 'Upload Student Enrollments', url: '/enrollmentupload' },
 	];
 
 	return (
@@ -65,6 +64,7 @@ const App = () => {
 			<Routes>
 				<Route path='/fileupload' element={<Fileupload />}></Route>
 				<Route path='/studentsgraph' element={<StudentsGraph />}></Route>
+				<Route path='/enrollmentupload' element={<EnrollmentUpload />}></Route>
 			</Routes>
 		</Fragment>
 	);
