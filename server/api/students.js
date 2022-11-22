@@ -10,4 +10,14 @@ app.get('/', async (req, res, next) => {
 	}
 });
 
+app.post('/', async (req, res, next) => {
+	try {
+		const studentArray = await req.body;
+		const newStudents = await Student.bulkCreate(studentArray);
+		res.status(201).send(newStudents);
+	} catch (ex) {
+		next(ex);
+	}
+});
+
 module.exports = app;

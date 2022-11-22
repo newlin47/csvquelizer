@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { fetchStudents } from '../store/students';
+import { fetchStudents, addStudents } from '../store/students';
 import Typography from '@mui/material/Typography';
 import FormControl from '@mui/material/FormControl';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Input from '@mui/material/Input';
 import StudentsGrid from './StudentsGrid';
-import StudentsGraph from './StudentsGraph';
 
 const csv = require('csvtojson');
 
@@ -33,6 +32,8 @@ function Fileupload() {
 				const csvOutput = event.target.result;
 				if (csvOutput) {
 					csvArray = await csv().fromString(csvOutput);
+					console.log(csvArray);
+					dispatch(addStudents(csvArray));
 				}
 			};
 		}
@@ -62,10 +63,10 @@ function Fileupload() {
 			</FormControl>
 			<br />
 			<br />
-			<StudentsGraph />
+			{/* <StudentsGraph /> */}
 			<br />
 			<br />
-			{/* <StudentsGrid /> */}
+			<StudentsGrid />
 		</Grid>
 	);
 }

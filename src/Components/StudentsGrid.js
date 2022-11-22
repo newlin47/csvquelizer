@@ -12,8 +12,8 @@ const StudentsGrid = () => {
 		if (students) {
 			setColumns([
 				{ field: 'id', headerName: 'ID', width: 150 },
-				{ field: 'firstName', headerName: 'First Name', width: 150 },
-				{ field: 'lastName', headerName: 'Last Name', width: 150 },
+				{ field: 'firstName', headerName: 'First Name', width: 225 },
+				{ field: 'lastName', headerName: 'Last Name', width: 255 },
 				{ field: 'gradelevel', headerName: 'Grade Level', width: 90 },
 			]);
 			setRows(students);
@@ -21,7 +21,7 @@ const StudentsGrid = () => {
 	}, [students]);
 
 	return (
-		<Box sx={{ height: 400, width: '100%' }}>
+		<Box sx={{ height: '400', width: '100%', padding: '2rem' }}>
 			<DataGrid
 				rows={rows}
 				columns={columns}
