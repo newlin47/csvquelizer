@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchStudents, addStudents } from '../store/students';
+import StudentsGrid from './StudentsGrid';
+import { CSVLink } from 'react-csv';
+import { useSnackbar } from 'notistack';
 import Typography from '@mui/material/Typography';
 import FormControl from '@mui/material/FormControl';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Input from '@mui/material/Input';
-import { useSnackbar } from 'notistack';
-import StudentsGrid from './StudentsGrid';
 
 const csv = require('csvtojson');
 
@@ -43,12 +44,22 @@ function Fileupload() {
 		}
 	};
 
+	const headers = [
+		{ label: 'id', key: 'id' },
+		{ label: 'firstName', key: 'firstName' },
+		{ label: 'lastName', key: 'lastName' },
+		{ label: 'gradelevel', key: 'gradelevel' },
+	];
+
+	const data = [{ id: '', firstName: '', lastName: '', gradelevel: '' }];
+
 	return (
 		<Grid container spacing={3} direction='column' alignItems='center'>
 			<br />
 			<br />
 			<br />
 			<Typography variant='h2'>Import CSV File</Typography>
+			<br />
 			<FormControl>
 				<Input
 					type={'file'}
@@ -66,6 +77,16 @@ function Fileupload() {
 				</Button>
 			</FormControl>
 			<br />
+			<Button variant='contained'>
+				<CSVLink
+					data={data}
+					headers={headers}
+					filename={'studenttemplate.csv'}
+					style={{ textDecoration: 'none', color: 'white' }}
+				>
+					Download CSV Student Template
+				</CSVLink>
+			</Button>
 			<br />
 			<br />
 			<StudentsGrid />
