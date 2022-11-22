@@ -2,11 +2,9 @@ import React, { useState, useEffect, Fragment } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchStudents } from '../store/students';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
 import {
 	BarChart,
 	Bar,
-	Cell,
 	XAxis,
 	YAxis,
 	CartesianGrid,
@@ -77,14 +75,13 @@ const StudentsGraph = () => {
 					total: twelfth,
 				},
 			]);
-			console.log(data);
 		}
 	}, [students]);
 
 	return (
 		<Fragment>
 			<br />
-			<Typography variant='h5' align='center'>
+			<Typography variant='h2' align='center'>
 				Total Enrollment by Grade
 			</Typography>
 			<br />
@@ -105,7 +102,7 @@ const StudentsGraph = () => {
 					<YAxis />
 					<Tooltip />
 					<Legend />
-					<Bar dataKey='total' fill='#8884d8' />
+					<Bar dataKey='total' fill='#1c6f02' />
 				</BarChart>
 			</ResponsiveContainer>
 		</Fragment>
