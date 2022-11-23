@@ -2,6 +2,7 @@ import React, { useState, useEffect, Fragment } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchStudents } from '../store/students';
 import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
 import {
 	BarChart,
 	Bar,
@@ -80,31 +81,33 @@ const StudentsGraph = () => {
 
 	return (
 		<Fragment>
-			<br />
-			<Typography variant='h2' align='center'>
-				Total Enrollment by Grade
-			</Typography>
-			<br />
-			<ResponsiveContainer width='100%' height='100%'>
-				<BarChart
-					width={500}
-					height={300}
-					data={data}
-					margin={{
-						top: 5,
-						right: 30,
-						left: 20,
-						bottom: 5,
-					}}
-				>
-					<CartesianGrid strokeDasharray='3 3' />
-					<XAxis dataKey='name' />
-					<YAxis />
-					<Tooltip />
-					<Legend />
-					<Bar dataKey='total' fill='#1c6f02' />
-				</BarChart>
-			</ResponsiveContainer>
+			<Container>
+				<br />
+				<Typography variant='h2' align='center'>
+					Total Enrollment by Grade
+				</Typography>
+				<br />
+				<ResponsiveContainer width='100%' height='80%'>
+					<BarChart
+						width={500}
+						height={300}
+						data={data}
+						margin={{
+							top: 5,
+							right: 30,
+							left: 20,
+							bottom: 5,
+						}}
+					>
+						<CartesianGrid strokeDasharray='3 3' />
+						<XAxis dataKey='name' />
+						<YAxis />
+						<Tooltip />
+						<Legend />
+						<Bar dataKey='total' fill='#1c6f02' />
+					</BarChart>
+				</ResponsiveContainer>
+			</Container>
 		</Fragment>
 	);
 };
