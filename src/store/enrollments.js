@@ -20,7 +20,7 @@ export const fetchEnrollments = () => {
 export const addEnrollments = (csvArray) => {
 	return async (dispatch) => {
 		const response = await axios.post('/api/enrollments', csvArray);
-		dispatch({ type: 'ADD_ENROLLMENTS', enrollments: response.data });
+		dispatch(fetchEnrollments());
 	};
 };
 

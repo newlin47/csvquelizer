@@ -11,7 +11,6 @@ const EnrollmentsGrid = () => {
 
 	useEffect(() => {
 		if (enrollments) {
-			setEnrollments(enrollments);
 			setColumns([
 				{ field: 'id', headerName: 'ID', width: 150 },
 				{ field: 'sectionId', headerName: 'Section ID', width: 150 },
@@ -26,16 +25,14 @@ const EnrollmentsGrid = () => {
 				},
 				{ field: 'coursename', headerName: 'Course Name', width: 150 },
 			]);
+
 			console.log(enrollments);
 			setRows(
 				enrollments.map((enrollment) => {
 					return {
 						id: enrollment.id,
 						sectionId: enrollment.sectionId,
-						teacher:
-							enrollment.section.teacher.lastName +
-							', ' +
-							enrollment.section.teacher.firstName,
+						teacher: enrollment.section.teacher.lastName,
 						studentId: enrollment.studentId,
 						firstName: enrollment.student.firstName,
 						lastName: enrollment.student.lastName,
