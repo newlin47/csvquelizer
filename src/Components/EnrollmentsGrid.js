@@ -47,7 +47,7 @@ const EnrollmentsGrid = () => {
 	return (
 		<Fragment>
 			<Typography variant='h4'>Current Enrollments</Typography>
-			<Box sx={{ height: '400', width: '100%', padding: '2rem' }}>
+			<Box sx={{ height: '600', width: '100%', padding: '2rem' }}>
 				<DataGrid
 					rows={rows}
 					columns={columns}

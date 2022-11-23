@@ -30,7 +30,7 @@ const App = () => {
 							display: { xs: 'none', md: 'flex' },
 							fontWeight: 700,
 							letterSpacing: '.3rem',
-							color: 'white',
+							color: '#1c6f02',
 							textDecoration: 'none',
 						}}
 					>
@@ -51,7 +51,7 @@ const App = () => {
 							>
 								<Link
 									to={page.url}
-									style={{ textDecoration: 'none', color: '#1c6f02' }}
+									style={{ textDecoration: 'none', color: 'white' }}
 									underline='hover'
 								>
 									{page.name}
