@@ -5,6 +5,8 @@ const Teacher = require('./Teacher');
 const Course = require('./Course');
 const Section = require('./Section');
 const Enrollment = require('./Enrollment');
+const Project = require('./Project');
+const Task = require('./Task');
 const path = require('path');
 
 // CSV files to sync and seed
@@ -30,6 +32,8 @@ Student.hasMany(Enrollment);
 Enrollment.belongsTo(Student);
 Enrollment.belongsTo(Section);
 Section.hasMany(Enrollment);
+Project.hasMany(Task);
+Task.belongsTo(Project);
 
 // sync and seed using csv files
 
@@ -82,6 +86,30 @@ const syncAndSeed = async () => {
 			sectionId: enrollment.sectionId,
 		});
 	});
+	const [newProj] = await Promise.all([
+		Project.create({
+			projectName: 'Kanban App',
+			description: 'A new Kanban project management application.',
+		}),
+	]);
+
+	await Task.create({
+		taskName: 'Create repo',
+		description: 'We need to create the base repository.',
+		projectId: newProj.id,
+		status: 'Done',
+	});
+	await Task.create({
+		taskName: 'Assign first tasks',
+		description: 'We need to assign the first tasks.',
+		projectId: newProj.id,
+	});
+	await Task.create({
+		taskName: 'Create wireframes',
+		description: 'We need to finish planning the project.',
+		projectId: newProj.id,
+		status: 'In Progress',
+	});
 };
 
 module.exports = {
@@ -91,4 +119,6 @@ module.exports = {
 	Section,
 	Course,
 	Enrollment,
+	Project,
+	Task,
 };
